@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>SHADOW COMPANY</title>
+
+<style>
+    body {
+        margin: 0;
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    img {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .login-box {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+    }
+
+    input {
+        margin: 5px 0;
+        padding: 10px;
+        border: none;
+        outline: none;
+        background: #111;
+        color: white;
+    }
+
+    button {
+        margin-top: 10px;
+        padding: 10px;
+        background: #222;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #444;
+    }
+
+    #erro {
+        color: red;
+        margin-top: 10px;
+        text-align: center;
+        display: none;
+    }
+</style>
+</head>
+
+<body>
+
+<img src="https://static.wikia.nocookie.net/villains/images/7/79/The_Shadow_Company_Logo.png/revision/latest?cb=20141229004258" alt="Logo">
+
+<div class="login-box">
+    <input type="text" id="username" placeholder="Username">
+    <input type="text" id="pais" placeholder="País">
+    <input type="password" id="senha" placeholder="Senha">
+    <button onclick="verificar()">ACESSAR</button>
+
+    <div id="erro">ACESSO NEGADO</div>
+</div>
+
+<script>
+function verificar() {
+    var user = document.getElementById("username").value;
+    var pais = document.getElementById("country").value;
+    var senha = document.getElementById("password").value;
+
+    if (user === "END3RLOW" && country.toLowerCase() === "BRAZIL" && password === "23042010") {
+        alert("ACESSO LIBERADO");
+    } else {
+        document.getElementById("erro").style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
