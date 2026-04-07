@@ -75,16 +75,14 @@
 <script>
 function verificar() {
     var user = document.getElementById("username").value;
-    var pais = document.getElementById("country").value;
-    var senha = document.getElementById("password").value;
+    var pais = document.getElementById("pais").value;
+    var senha = document.getElementById("senha").value;
 
-    if (user === "END3RLOW" && country.toLowerCase() === "BRAZIL" && password === "23042010") {
+    if (user === "END3RLOW" && pais.toUpperCase() === "BRAZIL" && senha === "23042010") {
         alert("ACESSO LIBERADO");
+        document.getElementById("erro").style.display = "none";
     } else {
         document.getElementById("erro").style.display = "block";
     }
 }
 </script>
-
-</body>
-</html>
